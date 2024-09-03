@@ -510,7 +510,7 @@ jobs:
     if: needs.setup.outputs.DOING_RELEASE == '1' || github.event.inputs.release != ''
     steps:
       - name: Download the Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           path: artifacts
       - name: Create Release
